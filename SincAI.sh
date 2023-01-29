@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e "\033[1;36mHARMONIZANDO SERVIDOR E PAINEL WEB ASCNET\033[0m"
+echo -e "\033[1;36mHARMONIZANDO SERVIDOR E PAINEL WEB STARLINKHOST\033[0m"
 sleep 10
 echo "America/Sao_Paulo" > /etc/timezone
 ln -fs /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
@@ -33,7 +33,7 @@ service ssh restart
 echo -e "\033[1;32mCaraca, nois e bom, se liga ai...\033[0m"
 sleep 3
 clear
-echo -e "\033[1;36mCONCLUIDO❤️\n1️⃣ VISITE SEU PAINEL WEB A.I ⚡.\n2️⃣ CRIE UM USUÁRIO.\nVOLTE NO PAINEL SSH E VERIFIQUE SE CRIOU.\033[0m"
+echo -e "\033[1;36mCONCLUIDO❤️\n1️⃣ VISITE SEU PAINEL WEB STARLINKHOST ⚡.\n2️⃣ CRIE UM USUÁRIO.\nVOLTE NO PAINEL SSH E VERIFIQUE SE CRIOU.\033[0m"
 sleep 10
 cat /dev/null > ~/.bash_history && history -c && clear
 rm *.html > /dev/null 2>&1
