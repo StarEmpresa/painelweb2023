@@ -16,13 +16,13 @@ Armazenamento: 20GB
 * 🦅 Painel WEB x86/x64bits
 
 ```
-apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/ascnet/painelweb2023/main/ubuinst.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/ubuinst.sh)
 ```
 
 * 🐱‍💻 Instalação
 * 🦅 Painel WEB 🦅 DB CONECTA 4g
 ```
-apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/ascnet/painelweb2023/main/bancoconecta.sh)
+apt install wget -y; bash <(wget -qO- https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/bancoconecta.sh)
 ```
 
- Powered By: <a href="https://t.me//">@ASCNET_VPN</a>
+ Powered By: <a href="https://t.me//">@DETONAWEBSSH4G</a>
