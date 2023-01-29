@@ -3,11 +3,11 @@ painel_rest () {
 clear
 mkdir /root/restaurar > /dev/null 2>&1
 cd /root/restaurar || exit
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/conectabd.sql > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/conectabd.sql > /dev/null 2>&1
 cd || exit
 clear
 echo ""
-echo -e "\033[1;33mADICIONAR BANCO DE DADOS CONECTA AO PAINEL WEB ASCNET 2023!\033[0m" 
+echo -e "\033[1;33mADICIONAR BANCO DE DADOS CONECTA AO PAINEL WEB STARLINKHOST 2023!\033[0m" 
 echo ""
 echo -ne "\033[1;32mDE UM ENTER PRA CONTINUAR...\033[0m"; read -r
 
