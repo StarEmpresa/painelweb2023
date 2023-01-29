@@ -190,15 +190,15 @@ function install_continue {
 function install_continue2 {
 cd /bin || exit
 rm pweb > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/pweb > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/pweb > /dev/null 2>&1
 chmod 777 pweb > /dev/null 2>&1
 clear
 [[ ! -d /bin/ppweb ]] && mkdir /bin/ppweb
 cd /bin/ppweb || exit
 rm *.sh ver* > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/verifatt.sh > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/verpweb > /dev/null 2>&1
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/verweb > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/verifatt.sh > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/verpweb > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/verweb > /dev/null 2>&1
 verp=$(sed -n '1 p' /bin/ppweb/verpweb| sed -e 's/[^0-9]//ig') &>/dev/null
 verw=$(sed -n '1 p' /bin/ppweb/verweb| sed -e 's/[^0-9]//ig') &>/dev/null
 echo -e "$verp" >/bin/ppweb/attpweb
@@ -241,7 +241,7 @@ curl -sS https://getcomposer.org/installer | php > /dev/null 2>&1
 mv composer.phar /usr/local/bin/composer > /dev/null 2>&1
 chmod +x /usr/local/bin/composer > /dev/null 2>&1
 cd /var/www/html || exit
-wget https://raw.githubusercontent.com/ascnet/painelweb2023/main/gestorssh.zip > /dev/null 2>&1
+wget https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/gestorssh.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
 unzip gestorssh.zip > /dev/null 2>&1
 (echo yes; echo yes; echo yes; echo yes) | composer install > /dev/null 2>&1
@@ -328,10 +328,10 @@ dpkg-reconfigure --frontend noninteractive tzdata > /dev/null 2>&1
 clear
 echo -e "\E[44;1;37m    INSTALANDO PAINEL    \E[0m"
 echo ""
-echo -e "WEB ASCNET" | figlet
-echo -e "                              \033[1;31mBy @ASCNET_VPN\033[1;36m"
+echo -e "STARLINKHOST" | figlet
+echo -e "                              \033[1;31mBy DETONAWEB\033[1;36m"
 echo ""
-chave=$(curl -sSL "https://raw.githubusercontent.com/ascnet/painelweb2023/main/chave") &>/dev/null
+chave=$(curl -sSL "https://raw.githubusercontent.com/StarEmpresa/painelweb2023/main/chave") &>/dev/null
 
 read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
     
@@ -372,7 +372,7 @@ install_continue2
 } > /dev/null
 echo ""
 echo -e "WEB GESTOR-SSH" | figlet
-echo -e "                              \033[1;31mBy @ASCNET_VPN\033[1;36m"
+echo -e "                              \033[1;31mBy DETONAWEB\033[1;36m"
 echo ""
 echo -e "\033[1;36mDEFINA UMA NOVA SENHA PARA\033[0m"
 echo -e "\033[1;36mO USUÁRIO ROOT DA VPS E\033[0m"
@@ -394,7 +394,7 @@ clear
 sed -i "s;upload_max_filesize = 2M;upload_max_filesize = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
 sed -i "s;post_max_size = 8M;post_max_size = 256M;g" /etc/php/8.1/apache2/php.ini > /dev/null 2>&1
 echo -e "PAINELWEB GESTOR-SSH" | figlet
-echo -e "                              \033[1;31mBy @ASCNET_VPN\033[1;36m"
+echo -e "                              \033[1;31mBy DETONAWEB\033[1;36m"
 echo ""
 echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!"
 echo ""
@@ -409,7 +409,7 @@ echo -e "\033[1;36m USUÁRIO:\033[1;37m root\033[0m"
 echo -e "\033[1;36m SENHA:\033[1;37m $pwdroot\033[0m"
 echo ""
 echo -e "\033[1;31m \033[1;33mCOMANDO PRINCIPAL: \033[1;32mpweb\033[0m"
-echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@ASCNET_VPN\033[0m"
+echo -e "\033[1;33m MAIS INFORMAÇÕES \033[1;31m(\033[1;36mTELEGRAM\033[1;31m): \033[1;37m@StarlinkOficial\033[0m"
 echo ""
 echo -ne "\n\033[1;31mENTER \033[1;33mpara retornar...\033[1;32m! \033[0m"; read
 systemctl restart apache2 > /dev/null 2>&1
